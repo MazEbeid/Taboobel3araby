@@ -2,13 +2,13 @@
 //noinspection GradleCompatible
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 24
+    compileSdkVersion 28
     buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "mazenebeidcreations.games.taboobel3araby"
         minSdkVersion 21
-        targetSdkVersion 24
+        targetSdkVersion 28
         versionCode 5
         versionName "3.0"
 

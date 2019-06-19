@@ -78,9 +78,9 @@ String wrd,wrd1,wrd2,wrd3,wrd4;
 static boolean newGame;
 	static String Target_Translate = "Translate";
     static String target_op = Target_Translate; //dummy default
-	DrawerLayout sideDrawer;
-    ListView sideDrawerList;
-    ImageButton openOptionsDrawerButton;
+	//DrawerLayout sideDrawer;
+//    ListView sideDrawerList;
+   // ImageButton openOptionsDrawerButton;
 
 
 
@@ -92,9 +92,9 @@ static boolean newGame;
 
 
 
-   sideDrawer = (DrawerLayout)findViewById(R.id.side_drawer);
-   sideDrawerList = (ListView)findViewById(R.id.side_drawer_list);
-   openOptionsDrawerButton = (ImageButton)findViewById(R.id.options_button);
+//   sideDrawer = (DrawerLayout)findViewById(R.id.side_drawer);
+//   sideDrawerList = (ListView)findViewById(R.id.side_drawer_list);
+//  // openOptionsDrawerButton = (ImageButton)findViewById(R.id.options_button);
 
     DrawerListItem sideDrawerListItems[] = new DrawerListItem[]
             {
@@ -110,75 +110,75 @@ static boolean newGame;
 
     DrawerListItemAdapter sideDrawerListAdapter = new DrawerListItemAdapter(this, R.layout.side_drawer_list_item, sideDrawerListItems);
 
-    sideDrawer = (DrawerLayout)findViewById(R.id.side_drawer);
-    sideDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
-    sideDrawerList = (ListView)findViewById(R.id.side_drawer_list);
-    sideDrawerList.setAdapter(sideDrawerListAdapter);
-
-    sideDrawer.setOnTouchListener(new View.OnTouchListener() {
-        @Override
-        public boolean onTouch(View v, MotionEvent event) {
-
-            if(sideDrawer.isDrawerOpen(GravityCompat.END))
-            {
-
-
-            }
-
-            return false;
-        }
-    });
-
-    sideDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-            if(position==0)
-            {
-                startActivity(goToSettingsActivity);
-            }
-            if(position==1)
-            {
-				startActivity(goToHowToPlayActivity);
-            }
-            if(position==2)
-            {
-				startActivity(goToAddCardActivity);
-            }
-            if(position==3)
-            {
-				startActivity(new Intent(Intent.ACTION_VIEW,
-						Uri.parse("http://play.google.com/store/apps/details?id=" + context.getPackageName())));
-            }
-            if(position==4)
-            {
-
-            }
-            if(position==5)
-            {
-
-
-            }
-            if(position==6)
-            {
-
-            }
-            if(position==7)
-            {
-
-            }
-
-        }
-    });
-
-
-    openOptionsDrawerButton.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-
-            sideDrawer.openDrawer(GravityCompat.END);
-        }
-    });
+//    sideDrawer = (DrawerLayout)findViewById(R.id.side_drawer);
+//    sideDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+//    sideDrawerList = (ListView)findViewById(R.id.side_drawer_list);
+//    sideDrawerList.setAdapter(sideDrawerListAdapter);
+//
+//    sideDrawer.setOnTouchListener(new View.OnTouchListener() {
+//        @Override
+//        public boolean onTouch(View v, MotionEvent event) {
+//
+//            if(sideDrawer.isDrawerOpen(GravityCompat.END))
+//            {
+//
+//
+//            }
+//
+//            return false;
+//        }
+//    });
+//
+//    sideDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//        @Override
+//        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//
+//            if(position==0)
+//            {
+//                startActivity(goToSettingsActivity);
+//            }
+//            if(position==1)
+//            {
+//				startActivity(goToHowToPlayActivity);
+//            }
+//            if(position==2)
+//            {
+//				startActivity(goToAddCardActivity);
+//            }
+//            if(position==3)
+//            {
+//				startActivity(new Intent(Intent.ACTION_VIEW,
+//						Uri.parse("http://play.google.com/store/apps/details?id=" + context.getPackageName())));
+//            }
+//            if(position==4)
+//            {
+//
+//            }
+//            if(position==5)
+//            {
+//
+//
+//            }
+//            if(position==6)
+//            {
+//
+//            }
+//            if(position==7)
+//            {
+//
+//            }
+//
+//        }
+//    });
+//
+//
+//    openOptionsDrawerButton.setOnClickListener(new View.OnClickListener() {
+//        @Override
+//        public void onClick(View view) {
+//
+//            sideDrawer.openDrawer(GravityCompat.END);
+//        }
+//    });
 	
 	newGame = false;
 	roundDuration = 120000;

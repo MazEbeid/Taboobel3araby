@@ -1,98 +1,46 @@
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/side_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mainpagecolor"
     android:orientation="vertical"
     tools:context="mazenebeidcreations.games.taboobel3araby.MainActivity" >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="vertical">
-
-
-
-        <ImageButton
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="top"
-            android:id="@+id/options_button"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true" />
-
-
-
         <ImageView
+            android:layout_marginTop="200dp"
             android:id="@+id/imageView1"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:src="@drawable/mainlabel"
-            android:layout_alignBottom="@+id/newGameButton"
-            android:layout_alignParentEnd="true"
-            android:layout_marginBottom="63dp" />
-        <ImageView
-            android:id="@+id/icon"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/icon"
-            android:layout_centerVertical="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/newGameButton" />
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/mainlabel"/>
+
         <Button
             android:id="@+id/newGameButton"
             style="@drawable/whie_button"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="65dp"
-            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_horizontal"
             android:background="@drawable/whie_button"
             android:fontFamily="@android:color/white"
-            android:gravity="center"
             android:text="جيم جديد "
             android:textColor="@drawable/button_text_color"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_alignBottom="@+id/exitGame"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="65dp" />
+            android:textStyle="bold"/>
 
         <Button
+            android:layout_marginTop="20dp"
             android:id="@+id/exitGame"
             style="@drawable/whie_button"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="65dp"
-            android:layout_marginLeft="5dp"
             android:background="@drawable/whie_button"
             android:fontFamily="@android:color/white"
-            android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:text="خروج"
             android:textColor="@drawable/button_text_color"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginBottom="91dp" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:text="Taboo Bel 3araby"
-            android:layout_alignBottom="@+id/icon"
-            android:layout_centerHorizontal="true" />
+            android:textStyle="bold" />
 
 
-    </RelativeLayout>
 
-    <ListView android:id="@+id/side_drawer_list"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:dividerHeight="1dp"
-        android:background="@color/white"
-        android:choiceMode="singleChoice"
-        />
-
-</android.support.v4.widget.DrawerLayout>
+</LinearLayout>
