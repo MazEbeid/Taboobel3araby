@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/mainpagecolor">
+
+    <TextView
+        android:id="@+id/scoreBoardLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Scoreboard"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/roundNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Round"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" >
+
+        <TextView
+            android:id="@+id/team1SLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Team 1"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/team2SLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:text="Team 2"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <AbsoluteLayout
+        android:id="@+id/AbsoluteLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_x="30dp"
+            android:layout_y="1dp"
+            android:src="@drawable/circle_shape" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_x="212dp"
+            android:layout_y="0dp"
+            android:src="@drawable/circle_shape" />
+
+        <TextView
+            android:id="@+id/team2ScoreLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_x="240dp"
+            android:layout_y="30dp"
+            android:text="0"
+            android:textSize="24dp" 
+             android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/team1ScoreLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="60dp"
+            android:layout_y="30dp"
+            android:text="0"
+            android:textSize="24dp"
+             android:textColor="@color/white" />
+
+    </AbsoluteLayout>
+
+    <Button
+        android:id="@+id/startNextRoundButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/whie_button"
+        android:text="الدور إلي بعده"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/endGameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/whie_button"
+        android:text="خلص الجيم"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+   
+   
+
+</LinearLayout>

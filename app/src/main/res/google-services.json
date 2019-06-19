@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "438655582560",
+    "firebase_url": "https://taboobel3araby-135a6.firebaseio.com",
+    "project_id": "taboobel3araby-135a6",
+    "storage_bucket": "taboobel3araby-135a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438655582560:android:70194c946aecbb92",
+        "android_client_info": {
+          "package_name": "mazenebeidcreations.games.taboobel3araby"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438655582560-1ugcfm1o0cmhnbqcdls2n2din2m49jok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg3ovKXENWG96sNGy_tV0s8i8_0_espWY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

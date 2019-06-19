@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainpagecolor"
+    android:orientation="vertical"
+    android:textAlignment="center" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="2dp"
+        android:text="عايز تزود كارت ؟!"
+        android:textColor="@color/anti_flash_white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/panel_borders"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/FrameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_word_layout" >
+
+            <EditText
+                android:id="@+id/wordEditText"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/word_edit_box"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:gravity="center_horizontal"
+                android:minLines="1"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <EditText
+
+            android:id="@+id/word1EditText"
+            android:layout_width="270dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_states"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="10dp"
+            android:textColor="@color/blue_whale"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/word2EditText"
+            android:layout_width="270dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_states"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minLines="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/blue_whale"
+            android:padding="10dp" 
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/word3EditText"
+            android:layout_width="270dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_states"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textColor="@color/blue_whale"
+            android:padding="10dp" 
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/word4EditText"
+            android:layout_width="270dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_states"
+            android:ems="10"
+            android:imeOptions="actionDone"
+         	android:gravity="center_horizontal"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="10dp" 
+            android:textColor="@color/blue_whale"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/newCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/addAnotherCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/whie_button"
+            android:text="كرت كمان "
+            android:textColor="@drawable/button_text_color"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/saveCardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/whie_button"
+            android:text="تسييف"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="15sp" />
+
+</LinearLayout>

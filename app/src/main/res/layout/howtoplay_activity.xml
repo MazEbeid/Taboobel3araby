@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/mainpagecolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+   <TextView
+       android:id="@+id/introductionLabel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="right"
+       android:layout_marginRight="10dp"
+       android:layout_marginTop="30dp"
+       android:text="@string/title1"
+       android:textColor="@color/white"
+       android:textSize="40sp" />
+
+   <TextView
+       android:id="@+id/introductionP1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:text="@string/introductionP1"
+       android:textColor="@color/white"
+       android:textSize="20sp" />
+   
+   
+   <TextView
+       android:id="@+id/introductionP2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:text="@string/introductionP2"
+       android:textColor="@color/white"
+       android:textSize="20sp" />
+   
+    <TextView
+       android:id="@+id/introductionP3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:text="@string/introductionP3"
+       android:textColor="@color/white"
+       android:textSize="20sp" />
+       
+          <TextView
+              android:id="@+id/howToPlayLabel"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="right"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              android:text="@string/title2"
+              android:textColor="@color/white"
+              android:textSize="40sp" />
+
+   <TextView
+       android:id="@+id/howToPlayP1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:text="@string/howToPlayP1"
+       android:textColor="@color/white" 
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/howToPlayP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/howToPlayP2"
+        android:textColor="@color/white"
+         android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/howToPlayP3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/howToPlayP3"
+        android:textColor="@color/white"
+         android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/pointersLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/title3"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+    
+     <TextView
+        android:id="@+id/pointersP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/pointersP1"
+        android:textColor="@color/white"
+         android:textSize="20sp" />
+     
+      <TextView
+        android:id="@+id/pointersP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/pointersP2"
+        android:textColor="@color/white"
+         android:textSize="20sp" />
+    
+    
+    
+    </LinearLayout>
+
+</ScrollView>

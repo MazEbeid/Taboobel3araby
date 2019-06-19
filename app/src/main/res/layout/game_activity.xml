@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainpagecolor"
+    android:orientation="vertical"
+    android:screenOrientation="portrait" >
+
+    <TextView
+        android:id="@+id/turnLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn"
+        android:textColor="@drawable/button_text_color"
+        android:textSize="20dp" />
+
+    <AbsoluteLayout
+        android:id="@+id/AbsoluteLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp" >
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="5dp"
+            android:layout_y="12dp"
+            android:text="Score"
+            android:textColor="@drawable/button_text_color" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="42dp"
+            android:layout_y="0dp"
+            android:src="@drawable/circle_shape"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/gameScoreLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="51dp"
+            android:layout_y="13dp"
+            android:text="0"
+            android:textColor="@drawable/button_text_color" />
+
+        <Button
+            android:id="@+id/undoButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_x="282dp"
+            android:layout_y="0dp"
+            android:background="@drawable/whie_button"
+            android:text="إخيه"
+            android:textColor="@drawable/button_text_color" />
+    </AbsoluteLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp" >
+
+        <TextView
+            android:id="@+id/counterLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Counter"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/panel_borders"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/FrameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_word_layout">
+
+            <TextView
+                android:id="@+id/wordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="WORD"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="32dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/word1Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.22"
+            android:text="Word 1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/taboo_gray"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/word2Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.22"
+            android:text="Word 2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/taboo_gray"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/word3Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.22"
+            android:text="Word 3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/taboo_gray"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/word4Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.22"
+            android:text="Word 4"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/taboo_gray"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gotItButton"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/whie_button"
+        android:text="جابوها"
+        android:textColor="@drawable/button_text_color"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/whie_button"
+        android:text="إلي بعده"
+        android:textColor="@drawable/button_text_color"
+        android:textSize="20dp" />
+
+</LinearLayout>
